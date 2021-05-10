@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Flavanoids &le; 1.575<br/>entropy = 1.579<br/>samples = 133<br/>value = [43, 50, 40]<br/>class = l>, fillcolor="#f0fdf5"] ;
+1 [label=<Color intensity &le; 3.825<br/>entropy = 0.688<br/>samples = 49<br/>value = [0, 9, 40]<br/>class = a>, fillcolor="#9d66eb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.0<br/>samples = 9<br/>value = [0, 9, 0]<br/>class = l>, fillcolor="#39e581"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 40<br/>value = [0, 0, 40]<br/>class = a>, fillcolor="#8139e5"] ;
+1 -> 3 ;
+4 [label=<Proline &le; 755.0<br/>entropy = 1.0<br/>samples = 84<br/>value = [43, 41, 0]<br/>class = C>, fillcolor="#fef9f6"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<Malic acid &le; 3.925<br/>entropy = 0.172<br/>samples = 39<br/>value = [1, 38, 0]<br/>class = l>, fillcolor="#3ee684"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.0<br/>samples = 36<br/>value = [0, 36, 0]<br/>class = l>, fillcolor="#39e581"] ;
+5 -> 6 ;
+7 [label=<Magnesium &le; 102.5<br/>entropy = 0.918<br/>samples = 3<br/>value = [1, 2, 0]<br/>class = l>, fillcolor="#9cf2c0"] ;
+5 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 2, 0]<br/>class = l>, fillcolor="#39e581"] ;
+7 -> 8 ;
+9 [label=<entropy = 0.0<br/>samples = 1<br/>value = [1, 0, 0]<br/>class = C>, fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label=<Color intensity &le; 3.465<br/>entropy = 0.353<br/>samples = 45<br/>value = [42, 3, 0]<br/>class = C>, fillcolor="#e78a47"] ;
+4 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 3<br/>value = [0, 3, 0]<br/>class = l>, fillcolor="#39e581"] ;
+10 -> 11 ;
+12 [label=<entropy = 0.0<br/>samples = 42<br/>value = [42, 0, 0]<br/>class = C>, fillcolor="#e58139"] ;
+10 -> 12 ;
+}
